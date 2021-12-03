@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type = "image/png" href="images/logofav.png">
+    <link rel="stylesheet", href="css/html5reset.css">
+    <link rel="stylesheet", href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;400&family=Playfair+Display&display=swap" rel="stylesheet">
+    <title>Contact</title>
+</head>
+<body>
+    <div class = "skip"><a href = "#hskip">Skip to Main Content</a></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href= "groceries.html">Groceries</a></li>
+                <li><a href="exercise.html">Exercise</a></li>
+                <li><a href="restaurants.html">Restaurants</a></li>
+                <li><a class = "contact" id = "current" href = "contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    
+        <div class = "logo">
+            <img class = "logoimage" src="images/logoreg.png">
+        </div>
+
+        <main class = "contactpage" id = "cskip">    
+            <header id="main">
+                <h1>My Guide to Life As A Student in Ann Arbor</h1>
+                
+            </header>
+            <h2 class="contactheader">Contact Me!</h2>
+        
+            <form 
+            class = "formflex"
+            action="https://formspree.io/f/mlezrzdy"
+            method="POST" >
+                <fieldset>
+            
+                <label for="name_id">Your Name</label>
+                <input type="text" placeholder="First + Last" id = "name_id" name="name" required>
+            
+                <label for="email_id">Your Email</label>
+                <input type="email" placeholder="email@example.com" id = "email_id" name="email" required>
+            
+            
+            
+                <label for="msg">Leave A Message</label>
+                <textarea placeholder="Enter your message" id = "msg" name="mesg" required></textarea><br>
+            
+                <input type="checkbox" checked="checked" name="remember" id = "cBox"> 
+                <label for ="cBox">Remember me</label>
+            
+                <input type="submit" value = "Contact Me">
+                </fieldset>
+            </form>
+            
+
+    </main>
+        <footer>
+            <p>University of Michigan School of Information <br/>
+        &copy; Lucy Deerin - Web Design Fall 2021</p>
+        </footer>
+</body>
+</html>

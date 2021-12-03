@@ -1,0 +1,992 @@
+
+.main{
+    color: white;
+}
+
+.logo{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.logoimage{
+    margin: auto;
+}
+body{
+    background-color: #08093C;
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(6, auto);
+
+}
+
+.contactpage{
+    display: flex;
+    flex-direction: column;
+
+}
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    perspective: 1000px;
+    align-self: center;
+    border-radius: 5px;/* Remove this if you don't want the 3D effect */
+}
+
+  /* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+  /* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    border: 2px solid white;
+    border-radius: 5px;
+    position: absolute;
+    
+}
+
+  /* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    width: 100%;
+    height: 400px;
+    background-color: #bbb;
+    color: black;
+    overflow: hidden;
+}
+
+  /* Style the back side */
+.flip-card-back {
+    background-color: lightgoldenrodyellow;
+    color: #08093C;
+    transform: rotateY(180deg);
+
+}
+.flip-card-front{
+    width: 100%;
+}
+.flip-card-back{
+    width: 100%;
+    height: 400px;
+}
+
+/* styling contact form */
+
+.formflex{
+    display: flex;
+    background-color: lightgoldenrodyellow;
+    color: #08093C;
+    justify-self: center;
+    border-radius: 7px;
+    border: 2px solid white;
+    align-items: center;
+    justify-content: center;
+    margin: 100px;
+    text-align: center;
+    line-height: 30px;
+    padding-bottom: 10px;
+}  
+
+input{
+    width: 100%;
+}
+textarea{
+    width: 100%
+}
+legend{
+    font-style: bold;
+    font-size: 20px;
+}
+@keyframes animate {
+    0% {opacity: 0;}
+    25% {opacity: 0.25;}
+    50% {opacity: 0.5;}
+    75% {opacity: 0.75;}
+    100% {opacity: 1;}
+}
+.contactheader{font-size: 30px;
+padding-top: 25px;
+text-align: center;
+color: lightgoldenrodyellow;
+animation-name: animate;
+animation-duration: 4s;
+}
+
+
+nav li{
+    display: inline;
+    padding-right: 8px;
+
+
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+nav ul{
+    list-style-type:none;
+    padding: 0px 0px;
+    background-color: #08093C;
+
+
+    
+}
+
+.sunset_image{
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+}   
+.gameday{
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+}
+
+.diag{
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+}
+.theatre{
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+}
+.ross{
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 1;
+}
+
+
+.aadriving{
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+}
+
+.lawquad{
+    grid-column: 2 / span 1;
+    grid-row: 4 / span 1;
+}
+
+.goblue{
+    grid-column: 1 / span 2;
+    grid-row: 5 / span 1;
+}
+.lawquad2{
+    grid-column: 1 / span 2;
+    grid-row: 6 / span 1;
+}
+
+
+
+
+header{
+    font-size: 40px;
+    padding-bottom: 50px;
+    text-align: center;
+    background-image: url("../images/stateStreet.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    color: white;
+    height: 400px;
+    background-repeat:no-repeat;
+    grid-column: 1 / span 4;
+    background-color: #08093C;
+
+
+}
+nav{
+    display: flex;
+    list-style: none;
+    color: white;
+    font-size: 18px;
+    height: 45px;
+    min-width: 100%;
+    margin-bottom: 10px;
+    text-align: left;
+    padding-top: 20px;
+    flex-wrap: wrap;
+
+
+}
+a:link{
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+
+}
+
+a:visited{
+    color: white;
+
+}
+a:hover{
+    color: lightskyblue;
+}
+
+.home:after{    
+    font-size: 30px;
+    content: "💙";
+}
+
+.restaurants:after{
+    content: "💛";
+}
+
+.groceries:after{
+    content: "💛";
+}
+
+.exercise:after{
+    content: "💙";
+}
+.contact:after{
+    content: "💙";
+}
+
+#current{
+    font-size: 30px;
+    color: lightgoldenrodyellow;
+}
+h1{
+    padding-top: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+footer{
+    width:100%;
+    background:#08093C;
+    text-align:center;
+    color: white;
+    min-height: 75px;
+    left: 0;
+    bottom: 0;
+    padding-top: 10px;
+}
+
+.groceries_container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(8, auto)
+
+}
+
+.groceriesheader{
+    grid-column: 1 / -1;
+    grid-row: 2 / span 1;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: lightgoldenrodyellow;
+    animation-name: animate;
+    animation-duration: 4s;
+}
+
+.traderjoestext{
+    color: #08093C;
+    grid-row: 4 / span 1;
+    grid-column: 1 / span 1;
+    background-color: white;
+    border: 4px solid gold;
+    padding: 2px;
+
+}
+.tjflipcard {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+}
+
+.tjflipcard-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 1.2s;
+    transform-style: preserve-3d;
+}
+
+.tjflipcard:hover .tjflipcard-inner{
+transform: rotateY(180deg);
+}
+
+.tjflipcard-front, .tjflipcard-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+    background-color: white;
+    border: 5px solid gold;
+    border-radius: 50%;
+}
+
+.tjflipcard-back {
+    transform: rotateY(180deg);
+    background-color: white;
+    border: 5px solid gold;
+    height: 100%;
+    width: 100%;
+    color: #08093C;
+    text-align: center;
+    padding: 15px;
+}
+
+.tjflipcard-inner img{
+    height: auto;
+    width: 300px;
+}
+
+
+
+.wholefoodstext{
+    grid-row: 6 / span 1;
+    grid-column: 1 / span 1;
+    background-color: white;
+    border: 4px solid gold;
+    padding: 2px;
+    color: #08093C;
+}
+.wfflipcard {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+}
+
+.wfflipcard-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 1.2s;
+    transform-style: preserve-3d;
+}
+
+.wfflipcard:hover .wfflipcard-inner{
+transform: rotateY(180deg);
+}
+
+.wfflipcard-front, .wfflipcard-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+    background-color: white;
+    border: 5px solid gold;
+    border-radius: 50%;
+}
+
+.wfflipcard-back {
+    transform: rotateY(180deg);
+    background-color: white;
+    border: 5px solid gold;
+    height: 100%;
+    width: 100%;
+    color: #08093C;
+    text-align: center;
+    padding: 15px;
+}
+
+.wfflipcard-inner img{
+    height: auto;
+    width: 300px;
+}
+
+
+.targettext{
+    grid-row: 8 / span 1;
+    grid-column: 1 / span 1;
+    background-color: white;
+    border: 4px solid gold;
+    padding: 2px;
+    color: #08093C;    
+}
+.targetflipcard {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+}
+
+.targetflipcard-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 1.2s;
+    transform-style: preserve-3d;
+}
+
+.targetflipcard:hover .targetflipcard-inner{
+transform: rotateY(180deg);
+}
+
+.targetflipcard-front, .targetflipcard-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+    background-color: white;
+    border: 5px solid gold;
+    border-radius: 50%;
+}
+
+.targetflipcard-back {
+    transform: rotateY(180deg);
+    background-color: white;
+    border: 5px solid gold;
+    height: 100%;
+    width: 100%;
+    color: #08093C;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+.targetflipcard-inner img{
+    height: auto;
+    width: 300px;
+}
+
+.groceries_main_header{
+    grid-row: 1 / span 1;
+    grid-column: 1 / -1;
+    color: white;
+}
+
+.exerciseheader{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: lightgoldenrodyellow;
+    animation-name: animate;
+    animation-duration: 4s;
+}
+
+div.exercise_types h3{
+    background: lightgoldenrodyellow;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #08093C;
+    font-size: 20px;
+    text-align: center;
+}
+.exercise_types{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.box{
+    flex-basis: 200px;
+    margin: 40px;
+    padding: 0 0 20px 0;
+    border: solid lightgoldenrodyellow 2px;
+    border-radius: 5px;
+}
+
+p{
+padding: 5px;
+}
+
+.restaurantsheader{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: lightgoldenrodyellow;
+    animation-name: animate;
+    animation-duration: 4s;
+
+}
+
+.restaurant_pics{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;    
+}
+
+.pic{
+    flex-basis: 250px;
+    margin: 50px;
+    padding: 0 0 20px 0;
+    border: solid lightgoldenrodyellow 2px;
+    border-radius: 5px;
+}
+
+#restaurantheaderav{
+        font-size: 30px;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: #08093C;
+        background-color: lightgoldenrodyellow;
+    }
+
+    #directionsav{
+        font-size: 20px;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: lightgoldenrodyellow;
+        background-color: #08093C;
+        border: solid lightgoldenrodyellow 2px;
+    }
+    #restaurantheadertaq{
+        font-size: 30px;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: #08093C;
+        background-color: lightgoldenrodyellow;
+    }
+    #directionstaq{
+        font-size: 20px;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: lightgoldenrodyellow;
+        background-color: #08093C;
+        border: solid lightgoldenrodyellow 2px;}
+
+    #restaurantheaderjb{
+        font-size: 30px;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: #08093C;
+        background-color: lightgoldenrodyellow;
+    }
+    #directionsjb{
+        font-size: 20px;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: lightgoldenrodyellow;
+        background-color: #08093C;
+        border: solid lightgoldenrodyellow 2px;}
+
+    #restaurantheaderto{
+        font-size: 30px;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: #08093C;
+        background-color: lightgoldenrodyellow;
+    }
+    #directionsto{
+        font-size: 20px;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: lightgoldenrodyellow;
+        background-color: #08093C;
+        border: solid lightgoldenrodyellow 2px;}
+
+    #restaurantheadersav{
+        font-size: 30px;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: #08093C;
+        background-color: lightgoldenrodyellow;
+    }
+    #directionssav{
+        font-size: 20px;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: lightgoldenrodyellow;
+        background-color: #08093C;
+        border: solid lightgoldenrodyellow 2px;}
+
+    #restaurantheaderbig{
+        font-size: 30px;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: #08093C;
+        background-color: lightgoldenrodyellow;
+    }
+    #directionsbig{
+        font-size: 20px;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: lightgoldenrodyellow;
+        background-color: #08093C;
+        border: solid lightgoldenrodyellow 2px;}
+    
+.skip a{
+    color: #08093C;
+}
+.skip a:focus{
+    color: white;
+}
+
+@media only screen and (min-width: 760px){
+nav{
+    justify-content: center;
+    align-items: center;
+
+}
+nav ul{
+    word-spacing: 40px;
+}
+.gallery{
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(5, auto);
+}
+.sunset_image{
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+}  
+.gameday{
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+
+}
+.diag{
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+}
+
+.ross{
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 1;
+}
+.theatre{
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+}
+
+.aadriving{
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+}
+
+.lawquad{
+    grid-column: 3 / span 1;
+    grid-row: 3 / span 1;
+}
+.goblue{
+    grid-column: 1 / span 3;
+    grid-row: 4 / span 1;
+}
+
+.lawquad2{
+    grid-column: 1 / span 3;
+    grid-row: 5 / span 1;
+}
+.restaurant_pics{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;    
+}
+.pic{
+    align-self: stretch;
+}
+.exercise_types{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items: stretch;
+    margin: 10px;
+}
+.soulcycleimage{
+    padding-top: 190px;
+}
+.imimage{
+    padding-top: 62px;
+}
+}
+@media only screen and (min-width: 992px){
+
+a:link{
+font-size: 20px;
+}
+
+
+.sunset_image figure img{
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    height: 300px;
+    width: 250px;
+    position: absolute;
+}
+
+.sunset_image figure figcaption{
+    background: rgba(255, 254, 230, 0.5);
+    height: 300px;
+    width: 250px;
+    text-align: center;
+    margin: auto;
+    color: #08093C;
+    font-style: bold;
+    visibility: hidden;
+    opacity: 0;
+    position: relative;
+    transition: opacity .2s, visibility .2s;
+}
+.sunset_image figure:hover figcaption{
+    visibility: visible;
+    opacity: 1;
+}
+.gameday figure img{
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    height: 300px;
+    width: 250px;
+    position: absolute;
+}
+
+.gameday figure figcaption{
+    background: rgba(255, 254, 230, 0.5);
+    height: 300px;
+    width: 250px;
+    text-align: center;
+    margin: auto;
+    color: #08093C;
+    font-style: bold;
+    visibility: hidden;
+    opacity: 0;
+    position: relative;
+    transition: opacity .2s, visibility .2s;
+}
+.gameday figure:hover figcaption{
+    visibility: visible;
+    opacity: 1;
+}
+.diag figure img{
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    height: 300px;
+    width: 250px;
+    position: absolute;
+}
+
+.diag figure figcaption{
+    background: rgba(255, 254, 230, 0.5);
+    height: 300px;
+    width: 250px;
+    text-align: center;
+    margin: auto;
+    color: #08093C;
+    font-style: bold;
+    visibility: hidden;
+    opacity: 0;
+    position: relative;
+    transition: opacity .2s, visibility .2s;
+}
+.diag figure:hover figcaption{
+    visibility: visible;
+    opacity: 1;
+}
+.ross figure img{
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    height: 600px;
+    width: 750px;
+    position: absolute;
+}
+
+.ross figure figcaption{
+    background: rgba(255, 254, 230, 0.5);
+    height: 600px;
+    width: 750px;
+    text-align: center;
+    margin: auto;
+    color: #08093C;
+    font-style: bold;
+    visibility: hidden;
+    opacity: 0;
+    position: relative;
+    transition: opacity .2s, visibility .2s;
+}
+.ross figure:hover figcaption{
+    visibility: visible;
+    opacity: 1;
+}
+.theatre figure img{
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    height: 300px;
+    width: 250px;
+    position: absolute;
+}
+
+.theatre figure figcaption{
+    background: rgba(255, 254, 230, 0.5);
+    height: 300px;
+    width: 250px;
+    text-align: center;
+    margin: auto;
+    color: #08093C;
+    font-style: bold;
+    visibility: hidden;
+    opacity: 0;
+    position: relative;
+    transition: opacity .2s, visibility .2s;
+}
+.theatre figure:hover figcaption{
+    visibility: visible;
+    opacity: 1;
+}
+.aadriving figure img{
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    height: 300px;
+    width: 250px;
+    position: absolute;
+}
+
+.aadriving figure figcaption{
+    background: rgba(255, 254, 230, 0.5);
+    height: 300px;
+    width: 250px;
+    text-align: center;
+    margin: auto;
+    color: #08093C;
+    font-style: bold;
+    visibility: hidden;
+    opacity: 0;
+    position: relative;
+    transition: opacity .2s, visibility .2s;
+}
+.aadriving figure:hover figcaption{
+    visibility: visible;
+    opacity: 1;
+}
+.lawquad figure img{
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    height: 300px;
+    width: 250px;
+    position: absolute;
+}
+
+.lawquad figure figcaption{
+    background: rgba(255, 254, 230, 0.5);
+    height: 300px;
+    width: 250px;
+    text-align: center;
+    margin: auto;
+    color: #08093C;
+    font-style: bold;
+    visibility: hidden;
+    opacity: 0;
+    position: relative;
+    transition: opacity .2s, visibility .2s;
+}
+.lawquad figure:hover figcaption{
+    visibility: visible;
+    opacity: 1;
+}
+.goblue figure img{
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    height: 600px;
+    width: 750px;
+    position: absolute;
+}
+
+.goblue figure figcaption{
+    background: rgba(255, 254, 230, 0.5);
+    height: 600px;
+    width: 750px;
+    text-align: center;
+    margin: auto;
+    color: #08093C;
+    font-style: bold;
+    visibility: hidden;
+    opacity: 0;
+    position: relative;
+    transition: opacity .2s, visibility .2s;
+}
+.goblue figure:hover figcaption{
+    visibility: visible;
+    opacity: 1;
+}
+.lawquad2 figure img{
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    height: 600px;
+    width: 750px;
+    position: absolute;
+}
+
+.lawquad2 figure figcaption{
+    background: rgba(255, 254, 230, 0.5);
+    height: 600px;
+    width: 750px;
+    text-align: center;
+    margin: auto;
+    color: #08093C;
+    font-style: bold;
+    visibility: hidden;
+    opacity: 0;
+    position: relative;
+    transition: opacity .2s, visibility .2s;
+}
+.lawquad2 figure:hover figcaption{
+    visibility: visible;
+    opacity: 1;
+}
+.gallery{
+    align-self: center;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-top: 50px;
+    margin-bottom: auto;
+}
+.formflex{
+    height: 800px;
+    width: 500px;
+    align-self: center;
+}
+}
