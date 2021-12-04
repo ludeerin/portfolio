@@ -20,6 +20,7 @@ body{
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(6, auto);
+    justify-items: center;
 
 }
 
@@ -28,87 +29,36 @@ body{
     flex-direction: column;
 
 }
-.flip-card {
-    background-color: transparent;
-    width: 300px;
-    perspective: 1000px;
-    align-self: center;
-    border-radius: 5px;/* Remove this if you don't want the 3D effect */
-}
 
-  /* This container is needed to position the front and back side */
-.flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-}
-
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-}
-
-  /* Position the front and back side */
-.flip-card-front, .flip-card-back {
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-    border: 2px solid white;
-    border-radius: 5px;
-    position: absolute;
-    
-}
-
-  /* Style the front side (fallback if image is missing) */
-.flip-card-front {
-    width: 100%;
-    height: 400px;
-    background-color: #bbb;
-    color: black;
-    overflow: hidden;
-}
-
-  /* Style the back side */
-.flip-card-back {
-    background-color: lightgoldenrodyellow;
-    color: #08093C;
-    transform: rotateY(180deg);
-
-}
-.flip-card-front{
-    width: 100%;
-}
-.flip-card-back{
-    width: 100%;
-    height: 400px;
-}
 
 /* styling contact form */
 
-.formflex{
+.contactinfo{
     display: flex;
-    background-color: lightgoldenrodyellow;
+    background-color: white;
     color: #08093C;
     justify-self: center;
     border-radius: 7px;
-    border: 2px solid white;
+    border: 10px double gold;
     align-items: center;
     justify-content: center;
     margin: 100px;
     text-align: center;
     line-height: 30px;
     padding-bottom: 10px;
+    flex-direction: column;
 }  
+.header{
+    font-size: 20px;
+    font-weight: bold;
+}
+
 
 input{
-    width: 100%;
+    width: 99%;
 }
 textarea{
-    width: 100%
+    width: 99%
 }
 legend{
     font-style: bold;
@@ -121,12 +71,13 @@ legend{
     75% {opacity: 0.75;}
     100% {opacity: 1;}
 }
-.contactheader{font-size: 30px;
+.contactheader{font-size: 50px;
 padding-top: 25px;
 text-align: center;
-color: lightgoldenrodyellow;
+color: palegoldenrod;
 animation-name: animate;
 animation-duration: 4s;
+font-family: 'Lobster Two', 'Playfair';
 }
 
 
@@ -187,13 +138,16 @@ nav ul{
 .goblue{
     grid-column: 1 / span 2;
     grid-row: 5 / span 1;
+
 }
 .lawquad2{
     grid-column: 1 / span 2;
     grid-row: 6 / span 1;
 }
 
-
+figcaption{
+    padding: 10px;
+}
 
 
 header{
@@ -298,9 +252,10 @@ footer{
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: lightgoldenrodyellow;
+    color: palegoldenrod;
     animation-name: animate;
     animation-duration: 4s;
+    font-family: 'Lobster Two', 'Playfair';
 }
 
 .traderjoestext{
@@ -308,8 +263,9 @@ footer{
     grid-row: 4 / span 1;
     grid-column: 1 / span 1;
     background-color: white;
-    border: 4px solid gold;
+    border: 10px double gold;
     padding: 2px;
+    border-radius: 7px;
 
 }
 .tjflipcard {
@@ -367,9 +323,10 @@ transform: rotateY(180deg);
     grid-row: 6 / span 1;
     grid-column: 1 / span 1;
     background-color: white;
-    border: 4px solid gold;
+    border: 10px double gold;
     padding: 2px;
     color: #08093C;
+    border-radius: 7px;
 }
 .wfflipcard {
     background-color: transparent;
@@ -425,9 +382,10 @@ transform: rotateY(180deg);
     grid-row: 8 / span 1;
     grid-column: 1 / span 1;
     background-color: white;
-    border: 4px solid gold;
+    border: 10px double gold;
     padding: 2px;
-    color: #08093C;    
+    color: #08093C; 
+    border-radius: 7px;   
 }
 .targetflipcard {
     background-color: transparent;
@@ -486,17 +444,17 @@ transform: rotateY(180deg);
 }
 
 .exerciseheader{
-    font-size: 30px;
+    font-size: 50px;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: lightgoldenrodyellow;
+    padding: 10px;
+    color: palegoldenrod;
     animation-name: animate;
     animation-duration: 4s;
+    font-family: 'Lobster Two', 'Playfair';
 }
 
 div.exercise_types h3{
-    background: lightgoldenrodyellow;
+    background: white;
     padding-top: 15px;
     padding-bottom: 15px;
     color: #08093C;
@@ -514,7 +472,7 @@ div.exercise_types h3{
     flex-basis: 200px;
     margin: 40px;
     padding: 0 0 20px 0;
-    border: solid lightgoldenrodyellow 2px;
+    border: double gold 20px;
     border-radius: 5px;
 }
 
@@ -523,13 +481,14 @@ padding: 5px;
 }
 
 .restaurantsheader{
-    font-size: 30px;
+    font-size: 50px;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
     color: lightgoldenrodyellow;
     animation-name: animate;
     animation-duration: 4s;
+    font-family: 'Lobster Two', 'Playfair';
 
 }
 
@@ -667,6 +626,7 @@ nav{
 nav ul{
     word-spacing: 40px;
 }
+
 .gallery{
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(5, auto);
@@ -727,7 +687,7 @@ nav ul{
     justify-content: center;
     flex-flow: row wrap;
     align-items: stretch;
-    margin: 10px;
+    margin: 20px;
 }
 .soulcycleimage{
     padding-top: 190px;
@@ -735,6 +695,17 @@ nav ul{
 .imimage{
     padding-top: 62px;
 }
+.traderjoestext, .targettext, .wholefoodstext{
+    margin: 50px;
+}
+.box{
+    flex-basis: 200px;
+    margin: 10px;
+    padding: 0 0 20px 0;
+    border: double gold 10px;;
+    border-radius: 5px;
+}
+
 }
 @media only screen and (min-width: 992px){
 
@@ -984,9 +955,90 @@ font-size: 20px;
     margin-top: 50px;
     margin-bottom: auto;
 }
-.formflex{
-    height: 800px;
-    width: 500px;
+.groceriesheader{
+    font-size: 50px;
+}
+.groceriessetup{
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(2, auto);
+    margin: 20px;
+    grid-row-gap: 60px;
+    grid-column-gap: 30px;
+}
+.traderjoestext{
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
     align-self: center;
+    justify-self: center;
+    padding: 10px;
+}
+.tjflipcard{
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
+}
+.wholefoodstext{
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+    align-self: center;
+    justify-self: center;
+    padding: 10px;
+}
+.wfflipcard{
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+}
+.targettext{
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 1;
+    align-self: center;
+    justify-self: center;
+    padding: 10px;
+}
+.targetflipcard{
+    grid-row: 3 / span 1;
+    grid-column: 2 / span 1;
+}
+.exercise_types{
+    display: flex;
+    flex-direction: column;
+
+}
+.box{
+    border: double gold 20px;
+    flex-basis: 100px;
+}
+
+.box p{
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    font-size: 30px;
+}
+div.exercise_types h3{
+    font-size: 50px;
+}
+
+.exerciseheader{
+    font-size: 50px;
+}
+#soul{
+    margin-top: 50px;
+    margin-right: 200px;
+    margin-left: 0px;
+    margin-bottom: 50px;
+}
+#outside{
+    margin-top: 50px;
+    margin-right: 0px;
+    margin-left: 200px;
+    margin-bottom: 50px;
+}
+#im{
+    margin-top: 50px;
+    margin-right: 200px;
+    margin-left: 0px;
+    margin-bottom: 50px; 
 }
 }
