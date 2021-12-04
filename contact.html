@@ -9,6 +9,7 @@
     <link rel="stylesheet", href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;400&family=Playfair+Display&display=swap" rel="stylesheet">
     <title>Contact</title>
 </head>
@@ -34,30 +35,35 @@
                 
             </header>
             <h2 class="contactheader">Contact Me!</h2>
-        
+        <div class = "contactinfo">
+            <p class = "header"> If you have any more questions, suggestions or comments feel free to reach out!</p>
+            <div class = "contactform">
             <form 
             class = "formflex"
             action="https://formspree.io/f/mlezrzdy"
             method="POST" >
                 <fieldset>
             
-                <label for="name_id">Your Name</label>
-                <input type="text" placeholder="First + Last" id = "name_id" name="name" required>
+                <label for="name_id">First Name</label>
+                <input type="text" placeholder="Your Name" id = "name_id" name="name" required>
             
+                <label for="lname_id">Last Name</label>
+                <input type="text" placeholder="Your Last Name" id = "name_id" name="name" required>
+
                 <label for="email_id">Your Email</label>
                 <input type="email" placeholder="email@example.com" id = "email_id" name="email" required>
             
             
             
                 <label for="msg">Leave A Message</label>
-                <textarea placeholder="Enter your message" id = "msg" name="mesg" required></textarea><br>
+                <textarea placeholder="Enter your message..." id = "msg" name="mesg" required></textarea><br>
             
-                <input type="checkbox" checked="checked" name="remember" id = "cBox"> 
-                <label for ="cBox">Remember me</label>
             
-                <input type="submit" value = "Contact Me">
+                <input type="submit" value = "Send">
                 </fieldset>
             </form>
+            </div>
+        </div>
             
 
     </main>
