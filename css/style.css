@@ -148,6 +148,7 @@ nav ul{
 figcaption{
     padding: 10px;
     border: 5px double gold;
+    align-self: stretch;
 }
 
 
@@ -476,7 +477,9 @@ div.exercise_types h3{
     border: double gold 20px;
     border-radius: 5px;
 }
-
+.box img{
+    align-self:
+}
 p{
 padding: 5px;
 }
@@ -1026,11 +1029,11 @@ figcaption{
     padding-top: 50px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 5px;
-    font-size: 30px;
+    padding-bottom: 0px;
+    font-size: 20px;
 }
 div.exercise_types h3{
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .exerciseheader{
@@ -1054,9 +1057,17 @@ div.exercise_types h3{
     margin-left: 0px;
     margin-bottom: 50px; 
 }
+.box img{
+    padding-top: 0px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 .restaurant_pics{
     flex-direction: row;
 
 }
+
 
 }
