@@ -147,6 +147,7 @@ nav ul{
 
 figcaption{
     padding: 10px;
+    border: 5px double gold;
 }
 
 
@@ -503,8 +504,9 @@ padding: 5px;
     flex-basis: 250px;
     margin: 50px;
     padding: 0 0 20px 0;
-    border: solid lightgoldenrodyellow 2px;
+    border: solid gold 2px;
     border-radius: 5px;
+    
 }
 
 #restaurantheaderav{
@@ -513,7 +515,7 @@ padding: 5px;
         padding-top: 10px;
         padding-bottom: 10px;
         color: #08093C;
-        background-color: lightgoldenrodyellow;
+        background-color: gold;
     }
 
     #directionsav{
@@ -521,9 +523,9 @@ padding: 5px;
         text-align: center;
         padding-top: 10px;
         padding-bottom: 10px;
-        color: lightgoldenrodyellow;
+        color: white;
         background-color: #08093C;
-        border: solid lightgoldenrodyellow 2px;
+
     }
     #restaurantheadertaq{
         font-size: 30px;
@@ -531,16 +533,17 @@ padding: 5px;
         padding-top: 10px;
         padding-bottom: 10px;
         color: #08093C;
-        background-color: lightgoldenrodyellow;
+        background-color: gold;
     }
     #directionstaq{
         font-size: 20px;
         text-align: center;
         padding-top: 10px;
         padding-bottom: 10px;
-        color: lightgoldenrodyellow;
+        color: white;
         background-color: #08093C;
-        border: solid lightgoldenrodyellow 2px;}
+
+    }
 
     #restaurantheaderjb{
         font-size: 30px;
@@ -548,16 +551,16 @@ padding: 5px;
         padding-top: 10px;
         padding-bottom: 10px;
         color: #08093C;
-        background-color: lightgoldenrodyellow;
+        background-color: gold;
     }
     #directionsjb{
         font-size: 20px;
         text-align: center;
         padding-top: 10px;
         padding-bottom: 10px;
-        color: lightgoldenrodyellow;
+        color: white;
         background-color: #08093C;
-        border: solid lightgoldenrodyellow 2px;}
+    }
 
     #restaurantheaderto{
         font-size: 30px;
@@ -565,16 +568,16 @@ padding: 5px;
         padding-top: 10px;
         padding-bottom: 10px;
         color: #08093C;
-        background-color: lightgoldenrodyellow;
+        background-color: gold;
     }
     #directionsto{
         font-size: 20px;
         text-align: center;
         padding-top: 10px;
         padding-bottom: 10px;
-        color: lightgoldenrodyellow;
+        color: white;
         background-color: #08093C;
-        border: solid lightgoldenrodyellow 2px;}
+    }
 
     #restaurantheadersav{
         font-size: 30px;
@@ -582,16 +585,16 @@ padding: 5px;
         padding-top: 10px;
         padding-bottom: 10px;
         color: #08093C;
-        background-color: lightgoldenrodyellow;
+        background-color: gold;
     }
     #directionssav{
         font-size: 20px;
         text-align: center;
         padding-top: 10px;
         padding-bottom: 10px;
-        color: lightgoldenrodyellow;
+        color: white;
         background-color: #08093C;
-        border: solid lightgoldenrodyellow 2px;}
+        }
 
     #restaurantheaderbig{
         font-size: 30px;
@@ -599,16 +602,23 @@ padding: 5px;
         padding-top: 10px;
         padding-bottom: 10px;
         color: #08093C;
-        background-color: lightgoldenrodyellow;
+        background-color:gold;
     }
     #directionsbig{
         font-size: 20px;
         text-align: center;
         padding-top: 10px;
         padding-bottom: 10px;
-        color: lightgoldenrodyellow;
+        color: white;
         background-color: #08093C;
-        border: solid lightgoldenrodyellow 2px;}
+        }
+    #avweb, #taqweb, #totweb, #savaweb, #jbweb, #bigweb, #avweb a, #taqweb a, #totweb a, #savaweb a, #jbweb a, #bigweb a{
+        font-size: 20px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    
     
 .skip a{
     color: #08093C;
@@ -713,7 +723,10 @@ a:link{
 font-size: 20px;
 }
 
-
+figcaption{
+    padding: 10px;
+    border: none;
+}
 .sunset_image figure img{
     border: none;
     margin: 0px;
@@ -1041,4 +1054,9 @@ div.exercise_types h3{
     margin-left: 0px;
     margin-bottom: 50px; 
 }
+.restaurant_pics{
+    flex-direction: row;
+
+}
+
 }
