@@ -1117,6 +1117,32 @@ div.exercise_types h3{
     margin-right: 100px;
 
 }
-
-
 }
+
+@media screen and (prefers-reduced-motion: reduce){
+    html{
+        scroll-behavior: auto;
+    }
+    .tjflipcard-inner {
+        transition: none;
+    }
+    
+    .wfflipcard-inner {
+        transition:  none;
+    }
+
+    .targetflipcard-inner {
+        transition:  none;
+    }
+
+    .restaurantsheader, .groceriesheader, .contactheader, .exerciseheader{
+        animation: none;
+    }
+
+    header{
+        background-attachment: scroll;
+
+    }
+
+
+} 
