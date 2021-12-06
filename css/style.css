@@ -74,7 +74,8 @@ legend{
 .contactheader{font-size: 50px;
 padding-top: 25px;
 text-align: center;
-color: palegoldenrod;
+background-color: lightgoldenrodyellow;
+color: #08093C;
 animation-name: animate;
 animation-duration: 4s;
 font-family: 'Lobster Two', 'Playfair';
@@ -254,7 +255,8 @@ footer{
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: palegoldenrod;
+    background-color: lightgoldenrodyellow;
+    color: #08093C;
     animation-name: animate;
     animation-duration: 4s;
     font-family: 'Lobster Two', 'Playfair';
@@ -449,7 +451,8 @@ transform: rotateY(180deg);
     font-size: 50px;
     text-align: center;
     padding: 10px;
-    color: palegoldenrod;
+    background-color: lightgoldenrodyellow;
+    color: #08093C;
     animation-name: animate;
     animation-duration: 4s;
     font-family: 'Lobster Two', 'Playfair';
@@ -487,7 +490,8 @@ padding: 5px;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: lightgoldenrodyellow;
+    background-color: lightgoldenrodyellow;
+    color: #08093C;
     animation-name: animate;
     animation-duration: 4s;
     font-family: 'Lobster Two', 'Playfair';
@@ -505,7 +509,7 @@ padding: 5px;
     cursor: pointer;
     font-family: 'Playfair';
     text-align: center;
-    background-color: palegoldenrod;
+    background-color: lightgoldenrodyellow;
 }
 
   /* Dropdown button on hover & focus */
@@ -1103,6 +1107,9 @@ div.exercise_types h3{
 }
 .restaurant_pics{
     flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    margin-right: 100px;
 
 }
 
