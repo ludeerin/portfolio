@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-</html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +11,106 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;400&family=Playfair+Display&display=swap" rel="stylesheet">
+<script>
+
+function myFunction(){
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event){
+    if(!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown_content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show')
+            }
+        }
+    }
+}
+function myFunctiontwo(){
+    document.getElementById("myDropdowntwo").classList.toggle("show");
+}
+
+window.onclick = function(event){
+    if(!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown_content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show')
+            }
+        }
+    }
+}
+function myFunctionthree(){
+    document.getElementById("myDropdownthree").classList.toggle("show");
+}
+
+window.onclick = function(event){
+    if(!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown_content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show')
+            }
+        }
+    }
+}
+function myFunctionfour(){
+    document.getElementById("myDropdownfour").classList.toggle("show");
+}
+
+window.onclick = function(event){
+    if(!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown_content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show')
+            }
+        }
+    }
+}
+function myFunctionfive(){
+    document.getElementById("myDropdownfive").classList.toggle("show");
+}
+
+window.onclick = function(event){
+    if(!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown_content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show')
+            }
+        }
+    }
+}
+function myFunctionsix(){
+    document.getElementById("myDropdownsix").classList.toggle("show");
+}
+
+window.onclick = function(event){
+    if(!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown_content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show')
+            }
+        }
+    }
+}
+</script>
+
     <title>Restaurants in Ann Arbor</title>
         <!-- Global Site Tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-1J8EJZZ3KC"></script>
@@ -34,9 +133,6 @@
             </ul>
         </nav>
 
-        <div class = "logo">
-            <img class = "logoimage" src="images/logoreg.png">
-        </div>
 
     
     <main class="restaurants_container" id = "rskip"> 
@@ -50,44 +146,97 @@
         
         <div class="pic" id = "aventura">
             <h3 id = "restaurantheaderav">Aventura</h3>
-            <h4 id = "directionsav">Address: 216 E Washington Street</h4>
-            <h5 id = "avweb">Website: <a href = "https://www.aventuraannarbor.com/" target = '_blank'>Aventura</a></h5>
+            <div class = "dropdown">
+            <button onclick="myFunction()" class = "dropbtn">
+                <div class = "barone"></div>
+                <div class = "bartwo"></div>
+            </button>
+        
+                <div class="dropdown_content" id = "myDropdown">
+                    <p id = "directionsav">Address: 216 E Washington Street</p>
+                    <p id = "avweb">Website: <a href = "https://www.aventuraannarbor.com/" target = '_blank'>Aventura</a></p>
+                </div>
+            </div>
             <img class="aventura" src = "images/aventura.jpeg", alt="An Aventura Tapa"/>
         </div>
                 
         <div class = "pic" id = "taq">
             <h3 id = "restaurantheadertaq">TAQ</h3>
-            <h4 id = "directionstaq">Address: 106 E Liberty Street</h4>
-            <h5 id = "taqweb">Website: <a href = "https://www.taqannarbor.com/" target = '_blank'>TAQ</a></h5>
+            <div class = "dropdown">
+                <button onclick="myFunctiontwo()" class = "dropbtn">
+                    <div class = "barone"></div>
+                    <div class = "bartwo"></div>
+                </button>
+            
+                    <div class="dropdown_content" id = "myDropdowntwo">
+                        <p id = "directionstaq">Address: 106 E Liberty Street</p>
+                        <p id = "taqweb">Website: <a href = "https://www.taqannarbor.com/" target = '_blank'>TAQ</a></p>
+                    </div>
+                </div>
             <img class="taq" src = "images/taq.jpeg", alt="Nachos from TAQ"/>
         </div>
         <div class = "pic" id = "jimbrady">
             <h3 id = "restaurantheaderjb"> Jim Brady's</h3>
-            <h4 id = "directionsjb">Address: 209 S Main Street</p>
-            <h5 id = "jbweb">Website: <a href = "http://www.jimbradysdetroit.com/ann-arbor-location.html" target = '_blank'> Jim Brady's</a></h5>
+            <div class = "dropdown">
+                <button onclick="myFunctionthree()" class = "dropbtn">
+                    <div class = "barone"></div>
+                    <div class = "bartwo"></div>
+                </button>
+            
+                    <div class="dropdown_content" id = "myDropdownthree">
+                        <p id = "directionsjb">Address: 209 S Main Street</p>
+                        <p id = "jbweb">Website: <a href = "http://www.jimbradysdetroit.com/ann-arbor-location.html" target = '_blank'> Jim Brady's</a></p>
+                    </div>
+                </div>
             <img class="jimbradys" src = "images/jimbradys.jpeg", alt="Charcuterie from Jim Brady's"/>
         </div>
                 
         <div class="pic" id = "totoro">
             <h3 id = "restaurantheaderto">Totoro</h3>
-            <h4 id = "directionsto">Address: 215 S State Street #2031</h4>
-            <h5 id = "totweb">Website: <a href = "https://totoroannarbor.com/" target = '_blank'>Totoro</a></h5>
+            <div class = "dropdown">
+                <button onclick="myFunctionfour()" class = "dropbtn">
+                    <div class = "barone"></div>
+                    <div class = "bartwo"></div>
+                </button>
+            
+                    <div class="dropdown_content" id = "myDropdownfour">
+                        <p id = "directionsto">Address: 215 S State Street #2031</p>
+                        <p id = "totweb">Website: <a href = "https://totoroannarbor.com/" target = '_blank'>Totoro</a></p>
+                    </div>
+                </div>
             <img class="totoro" src = "images/totoro.jpeg", alt="A Spread of Totoro Rolls"/>
         </div>
         <div class = "pic" id = "savas">
             <h3 id = "restaurantheadersav">Sava's</h3>
-            <h4 id = "directionssav">Address: 216 S State Street #112</h4>
-            <h5 id = "savaweb">Website: <a href = "https://www.savasannarbor.com/" target = '_blank'>Sava's</a></h5>
+            <div class = "dropdown">
+                <button onclick="myFunctionfive()" class = "dropbtn">
+                    <div class = "barone"></div>
+                    <div class = "bartwo"></div>
+                </button>
+            
+                    <div class="dropdown_content" id = "myDropdownfive">
+                        <p id = "directionssav">Address: 216 S State Street #112</p>
+                        <p id = "savaweb">Website: <a href = "https://www.savasannarbor.com/" target = '_blank'>Sava's</a></p>
+                    </div>
+                </div>
             <img class="savas" src = "images/savas.jpeg", alt="Brunch at Savas"/>
         </div>
         <div class = "pic" id = "bigalora">
             <h3 id = "restaurantheaderbig"> Bigalora</h3>
-            <h4 id = "directionsbig">Address: 3050 Washtenaw Ave </h4>
-            <h5 id = "bigweb">Website: <a href = "https://bigalora.com/" target = '_blank'>Bigalora</a></h5>
-            <img class="bigalora" src = "images/bigalora.jpeg", alt="Pizza from Bigalora"/>
+            <div class = "dropdown">
+                <button onclick="myFunctionsix()" class = "dropbtn">
+                    <div class = "barone"></div>
+                    <div class = "bartwo"></div>
+                </button>
+            
+                    <div class="dropdown_content" id = "myDropdownsix">
+                        <p id = "directionsbig">Address: 3050 Washtenaw Ave</p>
+                        <p id = "bigweb">Website: <a href = "https://bigalora.com/" target = '_blank'>Bigalora</a></p>
+                    </div>
+                </div>
+                <img class="bigalora" src = "images/bigalora.jpeg", alt="Pizza from Bigalora"/>
         </div>
     </div>
-    
 
 
     </div>
@@ -98,3 +247,4 @@
     &copy; Lucy Deerin - Web Design Fall 2021</p>
     </footer>
 </body>
+</html>
