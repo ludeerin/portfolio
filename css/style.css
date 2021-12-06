@@ -477,9 +477,7 @@ div.exercise_types h3{
     border: double gold 20px;
     border-radius: 5px;
 }
-.box img{
-    align-self:
-}
+
 p{
 padding: 5px;
 }
@@ -495,6 +493,45 @@ padding: 5px;
     font-family: 'Lobster Two', 'Playfair';
 
 }
+.barone, .bartwo{
+        width: 20px;
+        height: 2px;
+        background-color: #08093C;
+        margin: 6px 0;
+        border-radius: 3px;
+}
+
+.dropbtn {
+    cursor: pointer;
+    font-family: 'Playfair';
+    text-align: center;
+    background-color: palegoldenrod;
+}
+
+  /* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: white;
+}
+
+  /* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+  /* Dropdown Content (Hidden by Default) */
+.dropdown_content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    background-color: #08093C;
+}
+
+
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
 
 .restaurant_pics{
     display: flex;
