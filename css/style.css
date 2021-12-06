@@ -290,7 +290,7 @@ footer{
     transform-style: preserve-3d;
 }
 
-.tjflipcard:hover .tjflipcard-inner{
+.tjflipcard:hover .tjflipcard-inner, .tjflipcard:focus-within .tjflipcard-inner, .tjflipcard:active .tjflipcard-inner, .tjflipcard:focus .tjflipcard-inner{
 transform: rotateY(180deg);
 }
 
@@ -350,7 +350,7 @@ transform: rotateY(180deg);
     transform-style: preserve-3d;
 }
 
-.wfflipcard:hover .wfflipcard-inner{
+.wfflipcard:hover .wfflipcard-inner, .wfflipcard:focus-within .wfflipcard-inner, .wfflipcard:active .wfflipcard-inner, .wfflipcard:focus .wfflipcard-inner{
 transform: rotateY(180deg);
 }
 
@@ -409,7 +409,7 @@ transform: rotateY(180deg);
     transform-style: preserve-3d;
 }
 
-.targetflipcard:hover .targetflipcard-inner{
+.targetflipcard:hover .targetflipcard-inner, .targetflipcard:focus-within .targetflipcard-inner, .targetflipcard:active .targetflipcard-inner, .targetflipcard:focus .targetflipcard-inner{
 transform: rotateY(180deg);
 }
 
