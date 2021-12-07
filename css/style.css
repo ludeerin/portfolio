@@ -1064,11 +1064,14 @@ figcaption{
 .exercise_types{
     display: flex;
     flex-direction: column;
+    width: 100%;
 
 }
 .box{
     border: double gold 20px;
     flex-basis: 100px;
+    width: 50%;
+    
 }
 
 .box p{
@@ -1086,22 +1089,19 @@ div.exercise_types h3{
     font-size: 50px;
 }
 #soul{
-    margin-top: 50px;
-    margin-right: 200px;
-    margin-left: 0px;
-    margin-bottom: 50px;
+
+    align-self: flex-start;
+
 }
 #outside{
-    margin-top: 50px;
-    margin-right: 0px;
-    margin-left: 200px;
-    margin-bottom: 50px;
+
+    align-self: center;
+
 }
 #im{
-    margin-top: 50px;
-    margin-right: 200px;
-    margin-left: 0px;
-    margin-bottom: 50px; 
+
+    align-self: flex-end;
+
 }
 .box img{
     padding-top: 0px;
