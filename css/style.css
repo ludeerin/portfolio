@@ -669,12 +669,31 @@ padding: 5px;
 
     
     
-.skip a{
-    color: #08093C;
-}
-.skip a:focus{
-    color: white;
-}
+    .skip a{
+        background: #08093C;
+        color: white;
+        left: 0;
+        padding: 6px;
+        position: absolute;
+        top: -40px;
+        -webkit-transition: top 1s ease-out;
+        transition: top 1s ease-out;
+        z-index: 1;
+    }
+        
+    a.skip{
+        top:auto;
+    }
+        
+    .skip a:focus, .skip a:active{
+        left: auto;
+        top:auto;
+        height: auto;
+        overflow: auto;
+        margin: 40px;
+        padding: 6px;
+        z-index: 999;
+    }
 
 @media only screen and (min-width: 760px){
 nav{
@@ -1143,6 +1162,8 @@ div.exercise_types h3{
         background-attachment: scroll;
 
     }
-
+.skip a{
+    transition: none;
+}
 
 } 
